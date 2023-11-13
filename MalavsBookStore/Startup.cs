@@ -1,4 +1,5 @@
-
+using MalavsBooks.DataAccess.Repository;
+using MalavsBooks.DataAccess.Repository.IRepository;
 using MalavsBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,6 +36,7 @@ namespace MalavsBookStore
 
             services.AddDefaultIdentity<IdentityUser>()//removed this piece of code options => options.SignIn.RequireConfirmedAccount = true
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
