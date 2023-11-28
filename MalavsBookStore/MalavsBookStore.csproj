@@ -29,4 +29,8 @@
     <ProjectReference Include="..\MalavsBooks.Utility\MalavsBooks.Utility.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\products\" />
+  </ItemGroup>
+
 </Project>

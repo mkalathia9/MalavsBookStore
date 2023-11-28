@@ -8,6 +8,8 @@ namespace MalavsBooks.DataAccess.Repository.IRepository
     {
         ICategoryRepository Category { get; }
         ISP_Call SP_Call { get; }
+        ICoverTypeRepository CoverType { get; }
+        IProductRepository Product { get; }
 
         void Save();
     }

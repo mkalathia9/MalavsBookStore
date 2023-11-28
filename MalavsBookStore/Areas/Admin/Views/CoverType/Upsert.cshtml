@@ -1,8 +1,7 @@
-﻿@model MalavsBooks.Models.Category
-
+﻿@model MalavsBooks.Models.CoverType
 
 @{
-    var title = "Create Category";
+    var title = "Create Cover Type";
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
@@ -12,7 +11,7 @@
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 @if (Model.Id != null)
         {
-            title = "Edit Category";
+            title = "Edit Cover Type";
 }
 <div class="col-12 border-bottom">
     <h2 class="text-primary">e</h2>
